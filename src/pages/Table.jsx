@@ -6,7 +6,6 @@ const URL = "http://localhost:8000/api/users";
 export default function Table() {
   const [data, options, setOptions] = useRequest(URL);
   const { currentPage, totalPage, list } = data;
-  console.log(data);
   return (
     <>
       <table className="table table-striped">
