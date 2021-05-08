@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import Table from "./pages/Table";
+import Drag from "./pages/Drag";
 
 ReactDOM.render(
   <div className="container">
@@ -24,6 +25,7 @@ ReactDOM.render(
             </li>
           </ul>
           <Route path="/table" component={Table} />
+          <Route path="/drag" component={Drag} />
         </BrowserRouter>
       </div>
     </div>
